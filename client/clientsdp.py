@@ -118,7 +118,7 @@ class clientSDP(Client):
                 
                 diff = bar_C_tensor - C_tensor
                 
-                l2 = torch.mean(diff**2).item() * self.lda
+                l2 = torch.mean(diff**2).item() / self.lda
 
                 if (l2 > 1) or (l2 == 0):
                     self.lambdas[cls] = 1
