@@ -12,7 +12,7 @@ Our experiments show that **FedSDP outperforms state-of-the-art PFL frameworks**
 ## 🔧 Training
 To train FedSDP on **CIFAR-10** with 20 clients, use the following command:
 ```bash
-python ../main.py -data cifar10 -nb 10 -m resnetfc2 -lbs 8 -lr 0.01 -optim sgd -gr 100 -algo FedSDP -jr 1 -nc 20 -dir ../dataset/cifar10/dir01 -lda 0.35 -did 0 -ls1 1 -ls2 1 -ls3 1
+python ./main.py -data cifar10 -nb 10 -m resnetfc2 -lbs 8 -lr 0.01 -optim sgd -gr 100 -algo FedSDP -jr 1 -nc 20 -dir ../dataset/cifar10/dir01 -lda 0.35 -did 0 -ls1 1 -ls2 1 -ls3 1
 ```
 
 ### **📌 Explanation of Arguments**
